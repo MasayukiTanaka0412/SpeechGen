@@ -8,6 +8,7 @@ import tensorflow as tf
 
 import model, sample, encoder
 
+"""
 def interact_model(
     model_name='124M',
     seed=None,
@@ -16,6 +17,18 @@ def interact_model(
     length=None,
     temperature=1,
     top_k=0,
+    top_p=1,
+    models_dir='models',
+):
+"""
+def interact_model(
+    model_name='345M',
+    seed=None,
+    nsamples=3,
+    batch_size=3,
+    length=100,
+    temperature=1,
+    top_k=40,
     top_p=1,
     models_dir='models',
 ):
